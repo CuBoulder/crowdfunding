@@ -1,0 +1,26 @@
+{
+  "name": "cu-crowdfunding",
+  "version": "1.0.0",
+  "description": "CU Boulder crowdfunding",
+  "author": "Strategic Relations Web Team",
+  "private": true,
+  "engines":{
+    "node":"12.7.0",
+    "npm":"6.12.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild":"npm run generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "repositories":{
+    "type": "git",
+    "url": "https://git.heroku.com/cu-crowdfunding.git"
+  },
+  "devDependencies": {}
+}
