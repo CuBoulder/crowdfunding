@@ -22,23 +22,26 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ['node_modules/ucb-ui-vue/src/nuxt-plugin.js'],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+  buildModules: [],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    'bootstrap-vue/nuxt'
   ],
+  bootstrapVue:{
+    //componentPlugins: ['ModalPlugin'],
+    //bootstrapCSS: false,
+    //bootstrapVueCSS: false
+  },
   /*
   ** Build configuration
   */
