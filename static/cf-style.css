@@ -1,0 +1,5 @@
+/* fix positioning  */
+body #empowered-by-cf #explore-results { 
+    width: unset !important;
+    max-width:1200px;
+}
