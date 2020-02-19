@@ -9,7 +9,7 @@ export default {
   data: function() {
     return {
       config: {
-        site: "CU Crowdfunding",
+        site: "Boulder Crowdfunding",
         address: "123 Street Name",
         address_line_2: "Boulder, CO 80303",
         phone: "303-555-9056",
@@ -18,7 +18,8 @@ export default {
       menu: [
         { name: "About", path: "about" },
         { name: "Apply", path: "apply" },
-        { name: "How Crowdfunding Works", path: "howCrowdfundingWorks"}
+        { name: "How Crowdfunding Works", path: "howCrowdfundingWorks"},
+        { name: "FAQs", path: "faqs"}
       ]
     };
   }
