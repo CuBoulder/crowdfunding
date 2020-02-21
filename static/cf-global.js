@@ -1,8 +1,6 @@
 const ebcfSiteUrl = 'empoweredby.communityfunded.com';
 
 function cfLoadResource(e, t, c) {
-    'use strict';
-  
     var r = document.createElement(e);
     switch (e) {
       case 'link':
