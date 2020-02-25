@@ -34,12 +34,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    'nuxt-fontawesome'
   ],
   bootstrapVue:{
     //componentPlugins: ['ModalPlugin'],
     //bootstrapCSS: false,
     //bootstrapVueCSS: false
+  },
+  fontawesome:{
+    imports:[
+      {set: '@fortawesome/free-solid-svg-icons', icons: ['faUsers', 'faGraduationCap', 'faChartLine']}
+    ]
   },
   /*
   ** Build configuration

@@ -2,18 +2,21 @@
   <div>
     <img id="front-page-image" src="https://www.colorado.edu/crowdfunding/sites/default/files/styles/hero/public/aerial_2_copy.jpg?itok=SuD5M_Ae" alt="cu campus"/>
     <div id="cover-page-info">
-      <h3 id="be-impactful" >Be Impactful.</h3>
+      <h3 id="be-impactful" >Be impactful.</h3>
       <div id="cover-page-icons">
-        <div>
-          <h3>$1,534,143</h3>
+        <div class="icons-flex-children" >
+          <font-awesome-icon icon="chart-line" class="fa-3x icon-color-gold icon-circle"/>
+          <h3 class="facts-title" >$1,534,143</h3>
           <p>Total Amount Raised</p>
         </div>
-        <div>
-          <h3>168</h3>
+        <div class="icons-flex-children">
+          <font-awesome-icon icon="graduation-cap" class="fa-3x icon-color-gold icon-circle"/>
+          <h3 class="facts-title" >168</h3>
           <p>Projects Funded</p>
         </div>
-        <div>
-          <h3>6,815</h3>
+        <div class="icons-flex-children">
+          <font-awesome-icon icon="users" class="fa-3x icon-color-gold icon-circle" />
+          <h3 class="facts-title" >6,815</h3>
           <p> Total Donors</p>
         </div>
       </div>
@@ -48,10 +51,14 @@ export default {
   color: white;
   font-weight: bolder;
   text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
 }
-
+.facts-title{
+  margin-top: .5em;
+}
 #cover-page-info{
-  margin-top: 25%;
+  margin-top: -1em;
 }
 #cover-page-icons{
   color: white;
@@ -59,8 +66,21 @@ export default {
   justify-content: space-between;
   text-align: center;
 }
+.icons-flex-children{
+  width: 30%;
+}
 
+.icon-color-gold{
+  background-color: #CFB87C;
+  color: black;
+}
 
+.icon-circle{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: .3em;
+}
 #cf-wrapper{
   margin-top: 10%;
 }
@@ -72,6 +92,18 @@ export default {
   content: "";
   clear:both;
   display: table;
+}
+
+@media only screen and (max-width: 812px) {
+  #cover-page-info{
+    margin-top: 0px;
+  }
+  #be-impactful{
+    font-size: 2em;
+  }
+  #cover-page-icons{
+    display: none;
+  }
 }
 
 
