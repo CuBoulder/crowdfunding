@@ -25,3 +25,22 @@ export default {
   }
 };
 </script>
+<style>
+/* BSV overrides so i have to add the styles back */
+li > a{
+  color: white;
+}
+
+li > a:hover{
+  color: #cfb87c;
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.nuxt-link-exact-active{
+  color: #cfb87c;
+}
+
+/* End fixes */
+</style>

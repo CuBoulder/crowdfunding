@@ -1,10 +1,5 @@
 {
     "root": "dist/",
-    "proxies": {
-      "/api/": {
-        "origin": "https://nibble-api.herokuapp.com/api"
-      }
-    },
     "headers": {
       "/**": {
         "Cache-Control": "public, max-age=0, must-revalidate"

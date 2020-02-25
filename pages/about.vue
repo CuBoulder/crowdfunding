@@ -35,7 +35,7 @@ export default {
     margin-top: 1em;
   }
   button{
-    background-color: #CFB87C;
+    background-color: #cfb87c;
     border-radius: 5px;
     margin-bottom: 5em;
   }
