@@ -20,6 +20,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap-vue": "^2.5.0",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
@@ -29,5 +30,8 @@
     "type": "git",
     "url": "https://git.heroku.com/cu-crowdfunding.git"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.26.1",
+    "sass-loader": "^8.0.2"
+  }
 }

@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Boulder Crowdfunding' || '',
+    title: 'Boulder Crowdfunding',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,31 +21,27 @@ export default {
     ]
   },
   loading: { color: '#fff' },
-  css: [],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: ['node_modules/ucb-ui-vue/src/nuxt-plugin.js'],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [],
+  css: ['node_modules/ucb-ui-vue/src/styles/bootstrapCustom.scss'], // global Bootstrap class overrides
+  plugins: ['node_modules/ucb-ui-vue/src/nuxt-plugin.js'], //install the theme
   /*
   ** Nuxt.js modules
   */
   modules: [
     'bootstrap-vue/nuxt',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    '@nuxtjs/style-resources'
   ],
   bootstrapVue:{
-    //componentPlugins: ['ModalPlugin'],
-    //bootstrapCSS: false,
-    //bootstrapVueCSS: false
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
   },
   fontawesome:{
     imports:[
       {set: '@fortawesome/free-solid-svg-icons', icons: ['faUsers', 'faGraduationCap', 'faChartLine']}
     ]
+  },
+  styleResources:{
+    scss:[]
   },
   /*
   ** Build configuration

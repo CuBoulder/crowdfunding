@@ -14,7 +14,7 @@
       <p id="improve-statement">
          We are working to refine and expand CU Boulder Crowdfunding, so we welcome any feedback that can help us improve the platform.
       </p>
-      <button> <nuxt-link to="/"> Explore CU Crowdfunding Projects </nuxt-link> </button>
+      <button> <nuxt-link to="/" id="see-more-projects"> Explore CU Crowdfunding Projects </nuxt-link> </button>
       <br/>
       <img src="/through-crowdfunding.png" alt="cu crowdfunding logo" height="50%" width="50%" >
   </div>
@@ -39,8 +39,15 @@ export default {
     border-radius: 5px;
     margin-bottom: 5em;
   }
+  #see-more-projects{
+    color: white;
+  }
+  #see-more-projects:hover{
+    text-decoration: none;
+  }
   button:hover{
     background-color: grey;
+    transition: background-color 200ms ease-in;
   }
   #improve-statement{
     font-weight: bolder;
