@@ -1,22 +1,19 @@
-# cu-crowdfunding
+# CU Crowdfunding Site
+A Nuxt.js site
+### Installation
+    npm install 
 
-> CU Boulder crowdfunding
+### Scripts
+To build:
 
-## Build Setup
+    npm run generate
+    
+To test on localhost:3000: 
 
-``` bash
-# install dependencies
-$ npm run install
+    npm run dev
+To update the theme:
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+    npm run update-lib
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Community Funded
+This site uses the the Community Funded platform to show the projects. In order to get the projects to appear, there is a script called cf-global.js that runs and adds the projects. Also, there is a css file calles cf-style.css that formats the added divs. These files are in the **static** directory
