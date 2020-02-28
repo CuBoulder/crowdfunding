@@ -23,13 +23,9 @@ export default {
   loading: { color: '#fff' },
   css: ['node_modules/ucb-ui-vue/src/styles/bootstrapCustom.scss'], // global Bootstrap class overrides
   plugins: ['node_modules/ucb-ui-vue/src/nuxt-plugin.js'], //install the theme
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     'bootstrap-vue/nuxt',
-    'nuxt-fontawesome',
-    '@nuxtjs/style-resources'
+    'nuxt-fontawesome'
   ],
   bootstrapVue:{
     bootstrapCSS: false,
@@ -40,12 +36,6 @@ export default {
       {set: '@fortawesome/free-solid-svg-icons', icons: ['faUsers', 'faGraduationCap', 'faChartLine']}
     ]
   },
-  styleResources:{
-    scss:[]
-  },
-  /*
-  ** Build configuration
-  */
   build: {
     /*
     ** You can extend webpack config here
