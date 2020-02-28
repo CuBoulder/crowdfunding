@@ -10,10 +10,11 @@ export default {
     return {
       config: {
         site: "Boulder Crowdfunding",
-        address: "123 Street Name",
-        address_line_2: "Boulder, CO 80303",
-        phone: "303-555-9056",
-        email: "contact@example.com"
+        address: null,
+        address_line_2: null,
+        phone: null,
+        email: null,
+        links: [{name: "Crowdfunding Policy", url: "https://www.colorado.edu/policies/campus-wide-crowdfundingcrowdsourcing"}]
       },
       menu: [
         { name: "About", path: "about" },
@@ -25,3 +26,9 @@ export default {
   }
 };
 </script>
+<style>
+/* Add into main theme */
+#footer-information{
+  line-height: unset;
+}
+</style>

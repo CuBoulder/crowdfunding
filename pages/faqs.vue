@@ -3,12 +3,12 @@
     <h1> FAQs </h1>
     <h3> General FAQs </h3>
     <!-- what is crowdfunding answer -->
-    <div class="faq-div" v-b-toggle.collapse-1>
+    <div class="faq-div" v-b-toggle.faq-1>
         <img src="/expand.png" alt="see answer" width="15px"/>
         <p> What is Crowdfunding? </p>
     </div>
     <br/>
-    <b-collapse id="collapse-1">
+    <b-collapse id="faq-1">
         <b-card> Crowdfunding is the practice of sourcing small contributions from a large number of people to provide funding for a particular project or campaign, usually via the Internet. </b-card>
     </b-collapse>
     <!-- what is cu crowdfuning -->
