@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width:100%">
     <img id="front-page-image" src="https://www.colorado.edu/crowdfunding/sites/default/files/styles/hero/public/aerial_2_copy.jpg?itok=SuD5M_Ae" alt="cu campus"/>
     <div id="front-page-flexbox">
       <div id="cover-page-info">

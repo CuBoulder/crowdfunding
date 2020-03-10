@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width:100%" class="margin-bottom">
     <h1> FAQs </h1>
     <h3> General FAQs </h3>
     <!-- what is crowdfunding answer -->

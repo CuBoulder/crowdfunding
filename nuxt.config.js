@@ -12,28 +12,30 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     script: [
+      { src: "https://cdn.colorado.edu/static/brand-assets/live/js/brand-bar.js" },
+      { src: "https://cdn.colorado.edu/static/brand-assets/live/js/footer.js" },
       { src: '/cf-global.js'},
       { src: 'https://code.jquery.com/jquery-3.4.1.min.js' } //using jQuery for the crowdfunding things
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/cf-style.css', body: true}, //Override the styles
+      { rel: 'stylesheet', href: '/branding.css', body: true},  //offical style guide
+      { rel: 'stylesheet', href: '/ucb-styles.css', body: true}, // offical style guide
+      { rel: 'stylesheet', href: '/grid.css', body: true}, // offical style guide
+      { rel: 'stylesheet', href: 'https://cdn.colorado.edu/static/brand-assets/live/css/brand-bar.css', body: true}
     ]
   },
   loading: { color: '#fff' },
-  css: ['node_modules/ucb-ui-vue/src/styles/bootstrapCustom.scss'], // global Bootstrap class overrides
-  plugins: ['node_modules/ucb-ui-vue/src/nuxt-plugin.js'], //install the theme
+  css: [], 
+  plugins: [],
   modules: [
     'bootstrap-vue/nuxt',
     'nuxt-fontawesome'
   ],
-  bootstrapVue:{
-    bootstrapCSS: false,
-    bootstrapVueCSS: false
-  },
   fontawesome:{
     imports:[
-      {set: '@fortawesome/free-solid-svg-icons', icons: ['faUsers', 'faGraduationCap', 'faChartLine']}
+      {set: '@fortawesome/free-solid-svg-icons', icons: ['faUsers', 'faGraduationCap', 'faChartLine', 'faBars', 'faHome']}
     ]
   },
   build: {

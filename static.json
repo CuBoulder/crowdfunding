@@ -1,5 +1,10 @@
 {
     "root": "dist/",
+    "proxies":{
+      "/projects/":{
+        "origin" : "https://colorado.edu"
+      }
+    },
     "headers": {
       "/**": {
         "Cache-Control": "public, max-age=0, must-revalidate"
