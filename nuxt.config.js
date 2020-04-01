@@ -13,7 +13,7 @@ export default {
     ],
     script: [
       { src: "https://cdn.colorado.edu/static/brand-assets/live/js/brand-bar.js" },
-      { src: "https://cdn.colorado.edu/static/brand-assets/live/js/footer.js" },
+      { src: "https://cdn.colorado.edu/static/brand-assets/live/js/footer.js", body:true },
       { src: '/cf-global.js'},
       { src: 'https://code.jquery.com/jquery-3.4.1.min.js' } //using jQuery for the crowdfunding things
     ],
@@ -23,7 +23,7 @@ export default {
       { rel: 'stylesheet', href: '/branding.css', body: true},  //offical style guide
       { rel: 'stylesheet', href: '/ucb-styles.css', body: true}, // offical style guide
       { rel: 'stylesheet', href: '/grid.css', body: true}, // offical style guide
-      { rel: 'stylesheet', href: 'https://cdn.colorado.edu/static/brand-assets/live/css/brand-bar.css', body: true}
+      { rel: 'stylesheet', href: 'https://cdn.colorado.edu/static/brand-assets/live/css/brand-bar.css'}
     ]
   },
   loading: { color: '#fff' },
